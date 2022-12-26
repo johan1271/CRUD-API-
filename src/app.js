@@ -13,6 +13,7 @@ app.set('port', 4000);
 // Middlewares
 // morgan is a middleware that shows in the console the details about the request that i am doing
 app.use(morgan('dev'));
+app.use(express.json());
 
 
 // Routes
