@@ -6,12 +6,13 @@ const user = {
     iduser: {
         type: DataTypes.STRING(36),
         primaryKey: true,
+        unique: true,
+        defaultValue: DataTypes.UUIDV4,
         autoIncrement: false,
         field: 'iduser',
     },
     username: {
         type: DataTypes.STRING(36),
-        unique: true,
         allowNull: false,
         field: 'username',
     },
